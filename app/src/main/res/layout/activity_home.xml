@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="100dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@drawable/bgcard_home"
+        android:scaleType="centerCrop"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lexon"
+        android:text="Jméno"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:typeface="normal" />
+
+
+    <ImageView
+        android:id="@+id/info_slide"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_info_svg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="65dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/cardme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false"
+            android:clickable="true"
+            android:background="@drawable/bg1">
+
+            <TextView
+                android:id="@+id/home_ugoCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/code"
+                android:text="00000000"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="85dp" />
+
+            <TextView
+                android:id="@+id/home_ugoCard_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="00000000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="155dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/logougoback" />
+
+            <ImageView
+                android:id="@+id/salat"
+                android:layout_width="296dp"
+                android:layout_height="279dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-94dp"
+                android:layout_marginTop="-97dp"
+                android:src="@drawable/salat_karta_trans" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
+
+
+        <Button
+            android:id="@+id/popupBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Button" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:labelVisibilityMode="unlabeled"
+        android:foregroundTint="@color/white"
+        app:itemBackground="@drawable/menu_back_color"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/menu_color"
+        app:menu="@menu/bottom_navigation"
+        android:layout_margin="20dp"/>
+
+
+
+</RelativeLayout>
+
+
+

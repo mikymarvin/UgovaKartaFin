@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".WelcomeSlide">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dotsLayout"
+        android:layout_marginBottom="120dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="37dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:orientation="horizontal"
+        android:textAlignment="center"></LinearLayout>
+
+    <Button
+
+
+        android:id="@+id/begin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/bgcard_home_menu"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lexon"
+        android:textSize="20dp"
+        android:text="Začít" />
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="109dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorTransparent"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="109dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorTransparent"
+        android:text="Další"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

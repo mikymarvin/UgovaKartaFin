@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181636594252",
+    "firebase_url": "https://ugova-karta.firebaseio.com",
+    "project_id": "ugova-karta",
+    "storage_bucket": "ugova-karta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181636594252:android:297b37b98c496ca51dd2e9",
+        "android_client_info": {
+          "package_name": "cz.mikymarvin.ugovakarta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181636594252-enftf97gs7mqu52uk7sk8kfm1epfu8gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJF80IGGyH2g4N07qo5te8ImuK5Ctgi80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181636594252-enftf97gs7mqu52uk7sk8kfm1epfu8gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
